@@ -23,6 +23,15 @@
 }
 
 
+.success {
+    color: #5EDC4B;
+}
+
+.error {
+    color: #EE3D48;
+}
+
+
 @media (max-width: 426px) {
     .newsletter_title {
         font-size: 20px;

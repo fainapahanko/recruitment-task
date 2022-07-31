@@ -1,4 +1,5 @@
 import React from "react";
+import InfoBtn from "./ui/InfoBth";
 import { NavLink } from 'react-router-dom';
 import logo from '@assets/logo.svg';
 import "@components/NavBar.css";
@@ -33,7 +34,7 @@ const NavBar = ({ pages }: PagesProps) => {
                         })}
                     </nav>
                 </div>
-                <button type="button" className="button_pink">Contact us</button>
+                <InfoBtn type="button" text="Contact us" />
             </div>
         </header>
     )
