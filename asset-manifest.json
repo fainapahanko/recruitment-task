@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cd04544.css",
-    "main.js": "/static/js/main.2f402f5f.js",
-    "static/media/logo.svg": "/static/media/logo.1b4dae64ab987c6b3791731f6d01bded.svg",
-    "static/media/quotation-mark.svg": "/static/media/quotation-mark.bdc9dd350ff1d72c5ba55fcaaaacdad0.svg",
-    "index.html": "/index.html",
-    "main.9cd04544.css.map": "/static/css/main.9cd04544.css.map",
-    "main.2f402f5f.js.map": "/static/js/main.2f402f5f.js.map"
+    "main.css": "/recruitment-task/static/css/main.9cd04544.css",
+    "main.js": "/recruitment-task/static/js/main.abef934d.js",
+    "static/media/logo.svg": "/recruitment-task/static/media/logo.1b4dae64ab987c6b3791731f6d01bded.svg",
+    "static/media/quotation-mark.svg": "/recruitment-task/static/media/quotation-mark.bdc9dd350ff1d72c5ba55fcaaaacdad0.svg",
+    "index.html": "/recruitment-task/index.html",
+    "main.9cd04544.css.map": "/recruitment-task/static/css/main.9cd04544.css.map",
+    "main.abef934d.js.map": "/recruitment-task/static/js/main.abef934d.js.map"
   },
   "entrypoints": [
     "static/css/main.9cd04544.css",
-    "static/js/main.2f402f5f.js"
+    "static/js/main.abef934d.js"
   ]
 }
