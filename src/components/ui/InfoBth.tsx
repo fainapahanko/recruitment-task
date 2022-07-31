@@ -1,4 +1,3 @@
-import React from "react"
 import "./InfoBtn.css"
 
 interface InfpBtnProps {

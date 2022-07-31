@@ -1,4 +1,3 @@
-import React from "react"
 import quotationMark from "@assets/quotation-mark.svg"
 import "@components/Testimonial.css"
 

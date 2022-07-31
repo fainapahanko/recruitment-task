@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { postRequest } from '@utils/requests';
 import EmailForm from "@components/ui/EmailForm";
 import "@components/Newsletter.css"
