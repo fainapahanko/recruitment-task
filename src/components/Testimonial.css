@@ -30,9 +30,9 @@
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .testimonial_inner {
-        padding: 100px 120px;
+        padding: 80px 40px;
     }
     
     .testimonial_quote {
@@ -49,7 +49,7 @@
 @media (max-width: 426px) {
 
     .testimonial_inner {
-        padding: 60px 80px;
+        padding: 30px 20px;
     }
 
     .testimonial_quote {

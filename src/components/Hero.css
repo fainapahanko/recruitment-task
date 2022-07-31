@@ -27,9 +27,9 @@
     color: #231E1E;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .hero_section {
-        padding: 100px 120px;
+        padding: 80px 40px;
     }
 
     .hero_img {
@@ -46,7 +46,7 @@
 
     .hero_section {
         flex-wrap: wrap;
-        padding: 60px 80px;
+        padding: 30px 20px;
     }
 
     .hero_text,
