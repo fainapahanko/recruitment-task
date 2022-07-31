@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { getRequest } from '@utils/requests';
+import { PAGES } from "@utils/pages";
+import NavBar from "@components/NavBar"
+import {
+  Routes,
+  Route
+} from "react-router-dom";
+import "./normalize.css";
+import "./common.css";
+
 
 function App() {
+  const [pages, setPages] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const getPagesData = async () => {
+      const pagesData = await getRequest("pages")
+      setPages(pagesData.data)
+      setIsLoading(false)
+    }
+    getPagesData()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>        
+      <NavBar pages={pages} />
+      <Routes>
+        {
+          !isLoading && pages.map((el) => {
+            let Page = PAGES[el.url] 
+            return (
+              <Route exact key={el.id} path={el.url} element={<Page pageid={el.id}/>}/>
+            )
+          })
+        }
+      </Routes>
+    </>
   );
 }
 

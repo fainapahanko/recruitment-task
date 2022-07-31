@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.paths.json",
+    "compilerOptions": {
+      "target": "es5",
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true,
+      "declaration": true,
+      "jsx": "react-jsx",
+      "checkJs": false,
+      "moduleResolution": "Node",
+    },
+    "include": ["**/*.svg", "**/*.ts", "**/*.tsx", "**/*.d.ts", "**/*/.js", "@types", "@utils", "@assets", "@components", "@pages", "@features"],
+    "exclude": ["node_modules"]
+}

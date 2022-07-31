@@ -1,0 +1,41 @@
+.newsletter_section {
+    max-width: 624px;
+    padding: 128px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter_title {
+    color: #231E1E;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.newsletter_alert {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+
+@media (max-width: 426px) {
+    .newsletter_title {
+        font-size: 20px;
+    }
+
+    .newsletter_alert {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
