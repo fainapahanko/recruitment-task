@@ -21,13 +21,13 @@ const NavBar = ({ pages }: PagesProps) => {
         <header className="header">
             <div className="header_inner">
                 <div className="header_left">
-                    <NavLink to="/">
+                    <NavLink to="/recruitment-task">
                         <img className="header_img" src={logo} alt="My logo" />
                     </NavLink>
                     <nav className="menu">
                         {pages?.filter((page: SinglePage) => page["url"] !== "/").map((page: SinglePage) => {
                             return (
-                                <NavLink className="menu_item" key={page["id"]} to={page["url"]}>
+                                <NavLink className="menu_item" key={page["id"]} to={"/recruitment-task" + page["url"]}>
                                     {upperString(page["url"].split("/")[1])}
                                 </NavLink>
                             )

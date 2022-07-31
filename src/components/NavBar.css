@@ -61,3 +61,13 @@
         display: none;
     }
 }
+
+@media (max-width: 320px) {
+    .header_inner {
+        padding: 0 5px;
+    }
+    
+    .menu {
+        margin-left: 10px;
+    }
+}

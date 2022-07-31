@@ -31,7 +31,7 @@ function App() {
           !isLoading && pages.map((el) => {
             let Page = PAGES[el.url] 
             return (
-              <Route exact key={el.id} path={el.url} element={<Page pageid={el.id}/>}/>
+              <Route exact key={el.id} path={"/recruitment-task" + el.url} element={<Page pageid={el.id}/>}/>
             )
           })
         }
