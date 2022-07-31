@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Recruitment task 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of Content:
+1. [Demo link](#Demo-link)
+2. [About The App](#About-The-App)
+3. [Technologies](#Technologies)
+4. [Setup](#Setup)
+5. [Structure](#Structure)
+6. [Approach](#Approach)
 
-In the project directory, you can run:
+## Demo link:
+ - https://fainapahanko.github.io/recruitment-task
 
-### `npm start`
+## About The App
+ - This is the demo page created for the recruitment process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
+ - ReactJS, Typescript
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
+ - clone the project into your machine 
+ - run in your terminal:
+ ``` 
+ npm i
+ npm start
+ ```
+ - you are briliant
 
-### `npm test`
+*Note*: to run the code API headers credentials are needed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Structure 
+  - src/
+    - assets/
+        - folder for all assets (pngs, svgs, etc);
+    - components/
+        - ui/
+            - folder for small reusable ui components like buttons, forms, icons, etc and their css;
+        - folder for modular components and their css;
+    - pages/ 
+        - folder with pages that appears in the website;  
+    - utils/
+        - folder with logic that can be used in the application 
+        - API.js 
+            - file with axios instance initialized;
+        - pages.js
+            - file with an object to keep track of all pages and add route/component on demand;
+        - requests.js 
+            - file with functions for requests(GET, POST, PATCH, DEMAND) with parameters;
 
-### `npm run build`
+## Approach
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For the project I used typescript in order to control datatypes.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Reusable utilities placed in dedicated folder in order to not nest them in the component. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+One component one css file. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I used functional components only because project did not require any functionality that it doesn't have. 
