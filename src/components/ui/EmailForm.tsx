@@ -1,4 +1,5 @@
 import React from "react"
+import InfoBtn from "./InfoBth";
 import "./EmailForm.css"
 
 interface EmailFormType {
@@ -14,7 +15,8 @@ const EmailForm = ({updateEmail, newsletterSigning, text, placeholder}: EmailFor
             <label className="email_label">
                 <input onChange={(e) => updateEmail(e.target.value)} className="email_input" type="text" placeholder={placeholder} />
             </label>
-            <button type="submit" className="email_submit button_pink">{text}</button>
+            <InfoBtn type="submit" text={text}/>
+            {/* <button type="submit" className="email_submit button_pink">{text}</button> */}
         </form>
     )
 }
